@@ -1,0 +1,46 @@
+@import url(./normalize.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid grey;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.nav-wrapper {
+    margin: 30px 0;
+}
