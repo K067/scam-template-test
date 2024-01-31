@@ -18,7 +18,11 @@ nav {
     position: fixed;
     width: 100%;
     border-bottom: 1px solid grey;
+    max-height: 83px;
+}
 
+main {
+    padding-top: 83px;
 }
 
 ul {
@@ -34,6 +38,10 @@ li {
     list-style-type: none;
 }
 
+section {
+    display: none;
+}
+
 .container {
     max-width: 1140px;
     margin-left: 150px;
@@ -43,4 +51,36 @@ li {
 
 .nav-wrapper {
     margin: 30px 0;
+}
+
+a:hover,
+.actual-page {
+    color: rgb(70, 135, 193);
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active {
+    display: block !important;
+}
+
+.section-open {
+    display: block !important;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }

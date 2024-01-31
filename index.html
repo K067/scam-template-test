@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
-    <script src="./src/index.js" defer></script>
+    <script type="module" src="./src/index.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -14,13 +14,34 @@
         <div class="container">
             <div class="nav-wrapper">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="">Service</a></li>
+                    <li class="nav-item"><a href="" class="actual-page">Service</a></li>
                     <li class="nav-item"><a href="">Order</a></li>
                     <li class="nav-item"><a href="">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <main>
+        <section class="section-one open-section">
+            <button class="accordion">Basketball painting</button>
+            <div class="panel active">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, odit!</p>
+            </div>
+
+            <button class="accordion">Phone riding</button>
+            <div class="panel">
+                <p>Lorem, ipsum.</p>
+            </div>
+
+            <button class="accordion">Bread👍</button>
+            <div class="panel">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugit officia animi accusamus
+                    quaerat harum!</p>
+            </div>
+        </section>
+        <section class="section-two"></section>
+        <section class="section-three"></section>
+    </main>
 </body>
 
 </html>
