@@ -26,6 +26,10 @@ a {
     color: black;
 }
 
+video {
+    max-width: 700px;
+}
+
 nav {
     z-index: 1;
     background-color: white;
@@ -41,6 +45,7 @@ header {
 
 main {
     padding-top: 83px;
+    padding-bottom: 83px;
 }
 
 ul {
@@ -169,10 +174,6 @@ a:hover,
     border-radius: 20px 20px 0 0;
 }
 
-.last-child {
-    border-radius: 0 0 20px 20px;
-}
-
 .panel-content {
     display: flex;
     gap: 25px;
@@ -182,17 +183,52 @@ a:hover,
     max-width: 395px;
 }
 
+.bread {
+    justify-content: center;
+}
+
+.tooltip-text {
+    top: -100px;
+    left: 60%;
+    text-transform: none !important;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    background-color: #192733;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+}
+
+.pulse-button:hover .tooltip-text {
+    visibility: visible;
+}
+
+.cool-button {
+    background: rgb(154, 173, 255);
+    padding: 25px 100px;
+    color: white;
+    position: absolute;
+}
+
+.cool-button,
 .pulse-button {
     margin-top: 50px;
-    display: block;
-    padding: 25px;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
     border: none;
+    text-align: center;
     border-radius: 20px;
-    background: yellow;
     cursor: pointer;
+}
+
+.pulse-button {
+    color: black;
+    padding: 25px;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    background: yellow;
     animation: pulse 1.5s infinite;
 }
 
@@ -207,12 +243,10 @@ a:hover,
 
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
     }
 
     100% {
         transform: scale(.9);
-        box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
     }
 }
 

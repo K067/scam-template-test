@@ -1,7 +1,11 @@
 import accordion from "./modules/accordion.js";
-import head from "./modules/head.js";
+import { toggle } from "./modules/head.js";
 import map from "./modules/map.js";
+import bread from "./modules/bread.js";
+import form from "./modules/form.js";
 
-head();
+toggle();
 accordion();
+form();
+bread();
 map();
