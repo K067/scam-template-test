@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
     <script type="module" src="./src/index.js" defer></script>
     <title>Document</title>
 </head>
@@ -40,7 +41,9 @@
             </div>
         </section>
         <section id="order" class="section-two"></section>
-        <section id="contact" class="section-three"></section>
+        <section id="contact" class="section-three">
+            <div id="map" style="width: 600px; height: 400px"></div>
+        </section>
     </main>
 </body>
 
