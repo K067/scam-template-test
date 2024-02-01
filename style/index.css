@@ -74,8 +74,8 @@ a:hover,
     display: block !important;
 }
 
-.open-section {
-    display: block !important;
+.actual-section {
+    display: block;
 }
 
 .panel {
