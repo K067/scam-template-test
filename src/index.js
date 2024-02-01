@@ -1,7 +1,7 @@
 import accordion from "./modules/accordion.js";
-import nav from "./modules/nav.js";
+import head from "./modules/head.js";
 import map from "./modules/map.js";
 
-nav();
+head();
 accordion();
 map();
