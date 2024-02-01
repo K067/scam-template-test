@@ -4,11 +4,17 @@ const accordion = () => {
 
     acc.forEach(e => {
         e.addEventListener("click", () => {
-
-            panel.forEach(e => {
-                e.classList.remove('active');
-            });
-            e.nextElementSibling.classList.add('active');
+            if (e.nextElementSibling.classList.contains('active')) {
+                panel.forEach(e => {
+                    e.classList.remove('active');
+                });
+            } else {
+                e.nextElementSibling.classList.add('active');
+                panel.forEach(e => {
+                    e.classList.remove('active');
+                });
+                e.nextElementSibling.classList.add('active');
+            }
         })
     });
 }
