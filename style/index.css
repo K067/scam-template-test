@@ -72,6 +72,171 @@ img {
     object-fit: cover;
 }
 
+form {
+    display: flex;
+    gap: 19px;
+    flex-direction: column;
+}
+
+.form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #21943e;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.form-input {
+    max-height: 60px;
+    border-radius: 10px;
+    border: 1px solid #DADADA;
+    opacity: 0.6;
+    width: 251px;
+    padding: 15px 24px 16px 28px;
+}
+
+.fi-alt {
+    border-radius: 10px 0 0 10px;
+}
+
+.form-input-drop {
+    opacity: 1;
+
+}
+
+.form-input-drop {
+    position: relative;
+}
+
+.form-input-drop {
+    cursor: pointer;
+}
+
+.form-info-group {
+    gap: 19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form-info-wrapper {
+    display: flex;
+    gap: 19px;
+}
+
+.form-btn {
+    max-width: 237px;
+    border-radius: 0 10px 10px 0;
+    height: 60px;
+    border: none;
+    padding: 20px 67px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-input:focus {
+    outline: 1px solid #0E3B6C;
+}
+
+.dropdown-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.service-select {
+    cursor: pointer;
+}
+
+::placeholder,
+.service-select {
+    color: #1C1C1C;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    min-width: 100px;
+}
+
+.service-list {
+    z-index: 1;
+    background: white;
+    display: none;
+    top: 63px;
+    position: absolute;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.10);
+    padding-top: 7.93px;
+    padding-bottom: 18.83px;
+    width: 208px;
+}
+
+
+.service-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10.9px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.service-list-item:hover {
+    background: #3172B9;
+
+    .service-name {
+        color: white;
+    }
+
+}
+
+.submit-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.policy-agree * {
+    cursor: pointer;
+}
+
+.policy-agree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.img-mod {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
 .img-wrapper {
     width: 250px;
     height: 250px;

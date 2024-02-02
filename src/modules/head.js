@@ -25,7 +25,6 @@ const bnHead = e => {
 }
 
 const activeToggle = e => {
-
     e.preventDefault();
 
     section.forEach(tab => {
@@ -38,7 +37,9 @@ const activeToggle = e => {
         e.classList.remove('actual-page');
     })
 
-    e.target.classList.add('actual-page');
+    e.target.parentElement.className !== 'nav-item' ?
+        nav[1].classList.add('actual-page') :
+        e.target.classList.add('actual-page');
 
     bnHead(e);
 }
