@@ -39,6 +39,10 @@ nav {
     max-height: 83px;
 }
 
+button {
+    cursor: pointer;
+}
+
 header {
     padding-top: 83px;
 }
@@ -61,6 +65,10 @@ li {
     list-style-type: none;
 }
 
+label {
+    font-size: 12px;
+}
+
 section {
     display: none;
 }
@@ -78,20 +86,39 @@ form {
     flex-direction: column;
 }
 
-.form-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.form-title,
+.form-sub {
+    color: black;
+}
+
+.form-title {
+    font-size: 26px;
+}
+
+.form-sub {
+    font-size: 16px;
+}
+
+.form-head {
     display: flex;
-    background: #21943e;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background: #6fee91;
     border-radius: 20px;
-    padding: 50px;
+    padding: 30px 50px 30px 50px;
+    gap: 20px;
 }
 
 .form-input {
     max-height: 60px;
     border-radius: 10px;
     border: 1px solid #DADADA;
-    opacity: 0.6;
     width: 251px;
     padding: 15px 24px 16px 28px;
 }
@@ -101,15 +128,8 @@ form {
 }
 
 .form-input-drop {
-    opacity: 1;
-
-}
-
-.form-input-drop {
+    background: white;
     position: relative;
-}
-
-.form-input-drop {
     cursor: pointer;
 }
 
@@ -126,17 +146,23 @@ form {
 }
 
 .form-btn {
-    max-width: 237px;
+    width: 225px;
     border-radius: 0 10px 10px 0;
     height: 60px;
-    border: none;
+    border: 1px solid #DADADA;
     padding: 20px 67px;
     font-size: 15px;
     font-weight: 600;
+    color: blue;
+
 }
 
 .form-input:focus {
-    outline: 1px solid #0E3B6C;
+    outline: 1px solid #0e3c6c7f;
+}
+
+.fig-linked {
+    display: flex;
 }
 
 .dropdown-group {
@@ -172,10 +198,10 @@ form {
     display: none;
     top: 63px;
     position: absolute;
-    border-radius: 20px;
+    border-radius: 10px;
     -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.10);
     box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.10);
-    padding-top: 7.93px;
+    padding-top: 18.83px;
     padding-bottom: 18.83px;
     width: 208px;
 }
@@ -185,9 +211,9 @@ form {
     color: #000;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 10.9px;
     margin-left: 14px;
     cursor: pointer;
+    padding: 10px;
 }
 
 .service-list-item:hover {
@@ -200,16 +226,9 @@ form {
 }
 
 .submit-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    align-items: flex-start;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     gap: 9px;
 }
 
@@ -229,11 +248,8 @@ form {
 }
 
 .img-mod {
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
+    width: auto;
+    border: none;
     transition: 0.5s;
 }
 
