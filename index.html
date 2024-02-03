@@ -89,7 +89,7 @@
                         <div class="form-info-wrapper">
                             <div class="form-input form-input-drop">
                                 <div class="dropdown-group">
-                                    <span class="service-select">Service</span>
+                                    <spans class="service-select">Service</spans>
                                     <img class="img-mod" src="./image/icon/arrow-up.svg" alt="wrap">
                                 </div>
                                 <ul class="service-list">
@@ -103,28 +103,42 @@
                                         <p class="service-name">Bread👍</p>
                                     </li>
                                 </ul>
-                                <span class="error">Invalid fields!</span>
                             </div>
                             <div class="form-info-group">
                                 <input type="text" class="form-input" name="user_name" placeholder="Name">
                                 <div class="fig-linked">
                                     <input type="text" class="form-input fi-alt" name="user_mail" placeholder="E-mail">
+                                    <span class="error-check">nuh uh👉</span>
                                     <div class="submit-group">
                                         <button class="form-btn">BE WITH US!</button>
                                         <div class="policy-agree">
-                                            <input id="checkbox" type="checkbox" checked />
-                                            <label for="checkbox">I agree with the useragreement</label>
+                                            <label class="check-label tooltip" for="checkbox">I agree with the
+                                                useragreement
+                                                <input name="checkbox" id="checkbox" type="checkbox" checked />
+                                                <span></span>
+                                                <span class="tooltip-text cb-tt">by pushing the button you won't harm
+                                                    yourself. We
+                                                    promise.</span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <span class="error">CHECK THE FIELD S: valid email, name no less two letters,
+                                choosen
+                                service</span>
                         </div>
                     </div>
                 </form>
             </div>
         </section>
         <section id="contact" class="section-three">
-            <div id="map"></div>
+            <div class="container">
+                <div class="map-wrapper">
+                    <h1 class="map-title">WE ARE HERE!!!</h1>
+                    <div id="map"></div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

@@ -5,10 +5,12 @@ const validatePlus = list => {
         switch (elem.getAttribute('name')) {
             case 'user_name':
                 if (/^[a-zа-яё]{2,}/gi.test(elem.value.trim())) {
+                    elem.style.outline = 'none';
                     return;
                 }
-            case 'user_email':
+            case 'user_mail':
                 if (/^[a-z\d-\_\.!~*']+@[a-z\d-\_\.!~*']+.[a-z]{2,3}$/gi.test(elem.value.trim())) {
+                    elem.style.outline = 'none';
                     return;
                 }
                 break;

@@ -28,9 +28,11 @@ const activeToggle = e => {
     e.preventDefault();
 
     section.forEach(tab => {
-        tab.id === e.target.href.replace(regex, '') ?
-            tab.style.display = 'block' :
+        if (tab.id === e.target.href.replace(regex, '')) {
+            tab.style.display = 'block';
+        } else {
             tab.style.display = 'none';
+        }
     })
 
     nav.forEach(e => {

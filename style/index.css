@@ -86,6 +86,41 @@ form {
     flex-direction: column;
 }
 
+#checkbox {
+    display: none;
+}
+
+#checkbox+span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: white;
+    text-align: center;
+    border-radius: 1px;
+}
+
+#checkbox+span:before {
+    content: '\2713';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+#checkbox:checked+span:before {
+    opacity: 1;
+}
+
+.check-label {
+    position: relative;
+    user-select: none;
+    padding-left: 20px;
+}
+
 .form-title,
 .form-sub {
     color: black;
@@ -144,6 +179,7 @@ form {
 }
 
 .form-info-wrapper {
+    position: relative;
     flex-wrap: wrap;
     display: flex;
     gap: 19px;
@@ -166,6 +202,7 @@ form {
 }
 
 .fig-linked {
+    position: relative;
     display: flex;
 }
 
@@ -210,14 +247,21 @@ form {
     width: 208px;
 }
 
-.error {
-    bottom: -20px !important;
-    left: 0;
+.error,
+.error-check {
     display: none;
     position: absolute;
-    bottom: 0;
     color: red;
     font-size: 12px;
+    bottom: 0;
+}
+
+.error {
+    left: 0;
+}
+
+.error-check {
+    left: 190px;
 }
 
 .service-name {
@@ -258,6 +302,19 @@ form {
     align-items: center;
     gap: 8px;
     cursor: pointer;
+}
+
+.map-title {
+    color: black;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.map-wrapper {
+    flex-direction: column;
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
 .img-mod {
@@ -396,7 +453,12 @@ a:hover,
     padding: 10px 15px 10px 15px;
 }
 
-.pulse-button:hover .tooltip-text {
+.cb-tt {
+    top: -46px;
+    left: 76%;
+}
+
+.tooltip:hover .tooltip-text {
     visibility: visible;
 }
 
