@@ -108,6 +108,7 @@ form {
 .form-group {
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     display: flex;
     background: #6fee91;
     border-radius: 20px;
@@ -135,12 +136,15 @@ form {
 
 .form-info-group {
     gap: 19px;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .form-info-wrapper {
+    flex-wrap: wrap;
     display: flex;
     gap: 19px;
 }
@@ -206,6 +210,15 @@ form {
     width: 208px;
 }
 
+.error {
+    bottom: -20px !important;
+    left: 0;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    color: red;
+    font-size: 12px;
+}
 
 .service-name {
     color: #000;
